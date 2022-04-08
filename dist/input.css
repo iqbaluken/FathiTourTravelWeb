@@ -1,0 +1,45 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .subjudul {
+        @apply text-center mb-1 text-4xl lg:text-5xl font-bold font-minion text-ungu2;
+    }
+
+    .subsubjudul{
+        @apply text-center text-3xl font-semibold text-ungu1 mb-1 font-minion;
+    }
+
+    .kartu {
+        @apply border-4 border-ungu2 rounded bg-emas1 mx-1
+    }
+
+    .tombol {
+        @apply text-center rounded-full border-2 border-ungu2 bg-gradient-to-b from-ungu2 to-ungu4 text-white hover:no-underline tracking-tight hover:text-slate-50 hover:from-ungu4 hover:to-ungu3 transition;
+    }
+    .tombol-wa {
+        @apply text-center rounded-full border-2 border-green-600 bg-gradient-to-b from-green-500 to-green-400 text-white hover:no-underline hover:text-slate-50 hover:from-green-300 hover:to-green-200 cursor-pointer transition;
+    }
+}
+
+@layer base {
+  @font-face {
+    font-family: Grotesk Light;
+    font-weight: 400;
+    src: url(fonts/grotesk.ttf);
+  }
+  @font-face {
+    font-family: Minion Pro;
+    font-weight: 700;
+    src: url(fonts/MinionPro-Bold.otf);
+  }
+}
